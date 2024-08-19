@@ -101,7 +101,6 @@ const reset = ()=>{
     if(interval){
         clearInterval(interval);
     }
-
     minElement.innerHTML="00";
     secElement.innerHTML="00";
     questionNum.innerHTML=0;
@@ -111,6 +110,8 @@ const start= ()=>{
     result = [];
     table.innerHTML = "";
     answer.value="";
+    timespan.innerHTML = "00:00";
+    markspan.innerHTML = 0;
     countDown();
 }
 
