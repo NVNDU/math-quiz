@@ -61,6 +61,7 @@ const setAnswer = () =>{
 
     if( userAnswer === correctAnswer){
         marks+=2;
+        console.log(marks);
     }
 
     if (count==5) {
@@ -108,6 +109,7 @@ const reset = ()=>{
 
 const start= ()=>{
     result = [];
+    marks = 0;
     table.innerHTML = "";
     answer.value="";
     timespan.innerHTML = "00:00";
